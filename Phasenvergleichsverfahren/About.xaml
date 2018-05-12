@@ -1,0 +1,44 @@
+﻿<Window x:Class="About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="About" Height="255" Width="280" Icon="/Phasenvergleichsverfahren;component/Resources/PhasenIcon2.ico" ResizeMode="NoResize" ShowInTaskbar="False" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="166*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1">           
+            Version 1.0.0
+        </TextBlock>
+        
+        <TextBlock Grid.Column="1" Grid.Row="2">           
+            Copyright © Dominic Singer 2011
+        </TextBlock>
+        
+        <TextBlock Grid.Column="1" Grid.Row="4">           
+            Für Fragen, Anregungen und Kritik:
+        </TextBlock>
+        
+        <TextBlock Grid.Column="1" Grid.Row="5">           
+            <Hyperlink NavigateUri="mailto:mail@dominicsinger.de"  RequestNavigate="Hyperlink_RequestNavigate">mail@dominicsinger.de</Hyperlink>
+        </TextBlock>
+        
+        <TextBlock Grid.Column="1" Grid.Row="6">           
+            <Hyperlink NavigateUri="http://www.dominicsinger.de" RequestNavigate="Hyperlink_RequestNavigate">
+                http://www.dominicsinger.de
+            </Hyperlink>
+        </TextBlock>
+    </Grid>
+</Window>
